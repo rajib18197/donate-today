@@ -20,7 +20,7 @@
   </head>
   <body>
     <!--======== Header Section ========-->
-    <header class="header">
+    <header class="header flex justify-center align-center">
       <!-- HEADER CONTENT -->
       <div class="header-content">
         <h1 class="heading-primary">
@@ -52,20 +52,23 @@
         <!-- DONATION DETAILS -->
         <div class="donation-details">
           <!-- DONATION BOXES -->
-          <div class="donation">
-            <div class="donation-box">
+          <div class="donation flex">
+            <div class="donation-box flex justify-center align-center">
               <p class="donation-amount">100tk</p>
             </div>
-            <div class="donation-box donation-box-active">
+            <div
+              class="donation-box flex justify-center align-center"
+              id="donation-box-active"
+            >
               <p class="donation-amount">200tk</p>
             </div>
-            <div class="donation-box">
+            <div class="donation-box flex justify-center align-center">
               <p class="donation-amount">500tk</p>
             </div>
-            <div class="donation-box">
+            <div class="donation-box flex justify-center align-center">
               <p class="donation-amount">1000tk</p>
             </div>
-            <div class="donation-box">
+            <div class="donation-box flex justify-center align-center">
               <p class="donation-amount">5000tk</p>
             </div>
           </div>
@@ -96,9 +99,9 @@
         </div>
 
         <!-- SERVICES BOXES -->
-        <div class="services">
+        <div class="services flex">
           <!-- SERVICE BOX 01 -->
-          <div class="service-box service-box-1">
+          <div class="service-box flex" id="service-box-1">
             <img src="./images/food.png" alt="" class="service-box-icon" />
             <h3 class="heading-tertiary">Food for a family</h3>
             <p class="service-box-text">
@@ -109,7 +112,7 @@
           </div>
 
           <!-- SERVICE BOX 02 -->
-          <div class="service-box service-box-2">
+          <div class="service-box flex" id="service-box-2">
             <img src="./images/shelter.png" alt="" class="service-box-icon" />
             <h3 class="heading-tertiary">Shelter for a family</h3>
             <p class="service-box-text">
@@ -120,7 +123,7 @@
           </div>
 
           <!-- SERVICE BOX 03 -->
-          <div class="service-box service-box-3">
+          <div class="service-box flex" id="service-box-3">
             <img src="./images/Frame-1.png" alt="" class="service-box-icon" />
             <h3 class="heading-tertiary">Education for a child</h3>
             <p class="service-box-text">
@@ -144,11 +147,11 @@
         </div>
 
         <!-- EVENTS INNFORMATION -->
-        <div class="events-information">
+        <div class="events-information flex">
           <!-- EVENTS -->
-          <div class="events">
+          <div class="events flex">
             <!-- EVENT 01 -->
-            <div class="event">
+            <div class="event flex">
               <div class="event-date">
                 <p>29</p>
                 <p>May</p>
@@ -167,8 +170,8 @@
             </div>
 
             <!-- EVENT 02 -->
-            <div class="event">
-              <div class="event-date">
+            <div class="event flex">
+              <div class="event-date flex justify-center align-center">
                 <p>29</p>
                 <p>May</p>
               </div>
@@ -186,7 +189,7 @@
             </div>
 
             <!-- EVENT 03 -->
-            <div class="event">
+            <div class="event flex">
               <div class="event-date">
                 <span>29</span>
                 <span>May</span>
@@ -206,8 +209,8 @@
           </div>
 
           <!-- EVENTS ATTACHMENT -->
-          <div class="events-attachment">
-            <div class="event-text">
+          <div class="events-attachment flex">
+            <div class="event-text flex">
               <span class="event-text-sub">Urgent Causes</span>
               <p class="event-text-quote">Stand for poor people</p>
             </div>
@@ -232,7 +235,7 @@
         </div>
 
         <!-- UPDATES FORM -->
-        <form class="form-updates">
+        <form class="form-updates flex justify-center align-center">
           <input type="email" class="form-updates-input" placeholder="Email" />
           <button type="submit" class="btn form-updates-btn">Subscribe</button>
         </form>

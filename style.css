@@ -75,10 +75,30 @@ input {
   color: #121212;
 }
 
+/* REUSABLE STYLES */
 .text-sm {
   text-transform: capitalize;
   font-size: 2.3rem;
   color: white;
+}
+
+.header,
+.events-attachment {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
 }
 
 /*======== HEADER SECTION ========*/
@@ -91,12 +111,6 @@ input {
       rgba(16, 29, 40, 0.808)
     ),
     url(./images/donation13.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .header-content {
@@ -144,7 +158,6 @@ input {
 }
 
 .donation {
-  display: flex;
   gap: 1rem;
 }
 
@@ -153,13 +166,10 @@ input {
   height: 15rem;
   background-color: rgb(238, 237, 237);
   padding: 2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5px;
 }
 
-.donation-box-active {
+#donation-box-active {
   border: 3px solid #ff4848;
   background-color: rgb(255, 233, 233);
 }
@@ -169,7 +179,7 @@ input {
   color: #666;
 }
 
-.donation-box-active .donation-amount {
+#donation-box-active .donation-amount {
   color: #ff4848;
 }
 
@@ -197,7 +207,6 @@ input {
 /*======== DONATE SERVICES  ========*/
 
 .services {
-  display: flex;
   gap: 1.5rem;
   width: 90%;
   margin: 6rem auto;
@@ -206,19 +215,18 @@ input {
 .service-box {
   flex: 1;
   padding: 4rem 2rem;
-  display: flex;
   flex-direction: column;
   gap: 1.4rem;
 }
 
-.service-box-1 {
+#service-box-1 {
   background-color: #fcc2d7;
 }
 
-.service-box-2 {
+#service-box-2 {
   background-color: #eebafe;
 }
-.service-box-3 {
+#service-box-3 {
   background-color: #ffc9c9;
 }
 .service-box-icon {
@@ -238,14 +246,12 @@ input {
   width: 90%;
   margin: 6rem auto;
   border-top: 7px solid #6f27ce;
-  display: flex;
 }
 
 .events {
   flex: 2;
   background-color: #f6dcfd;
   padding: 0rem 0;
-  display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
@@ -253,7 +259,6 @@ input {
 .event {
   background-color: #101d38;
   color: white;
-  display: flex;
   gap: 2rem;
   padding: 2rem 2rem;
   align-items: center;
@@ -266,10 +271,7 @@ input {
   height: 10rem;
   width: 10rem;
   border-radius: 50%;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   line-height: 1.4;
 }
 
@@ -302,10 +304,6 @@ input {
       rgba(235, 83, 16, 0.85)
     ),
     url(./images/preview.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
   align-items: end;
   justify-content: end;
 }
@@ -315,7 +313,6 @@ input {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: capitalize;
-  display: flex;
   flex-direction: column;
 }
 
@@ -344,9 +341,6 @@ input {
   width: 60%;
   margin: 6rem auto;
   border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 0 6rem 2rem rgba(0, 0, 0, 0.15);
 }
 
